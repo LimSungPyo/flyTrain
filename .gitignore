@@ -1,0 +1,66 @@
+# ---- OS / editor ----
+.DS_Store
+*.log
+.idea/
+.vscode/
+
+# ---- 로컬 실행 스크립트 (개인 런처: 절대경로·사용자명 포함) ----
+start.command
+stop.command
+# 실행 산출물 (로그/PID)
+.dev/
+
+# ---- Claude 작업 규칙·설정 (개인용, 공개하지 않음) ----
+.claude
+claude.md
+front_end/AGENTS.md
+front_end/CLAUDE.md
+
+# ---- 커넥톰 데이터 (용량 큼 · 라이선스상 재배포 대신 출처에서 받기) ----
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+# 초파리별 학습된 뇌 가중치 (로컬 개발용 저장소)
+back_end/.brains/
+
+# ---- Node / Next.js (front_end) ----
+node_modules/
+.next/
+out/
+build/
+dist/
+.vercel/
+*.tsbuildinfo
+next-env.d.ts
+
+# ---- 테스트 산출물 ----
+coverage/
+.vitest/
+playwright-report/
+test-results/
+.playwright/
+
+# ---- Env ----
+.env
+.env.*
+!.env.example
+
+# ---- Python / FastAPI (back_end) ----
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+.ipynb_checkpoints/
+
+# ---- 로컬 DB 파일 (sqlite) ----
+*.db
+*.sqlite
+*.sqlite3
